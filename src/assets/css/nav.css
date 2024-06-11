@@ -96,42 +96,62 @@ body {
     padding: 10px;
     cursor: pointer;
 }
-
-
 .hero-text button:hover{
     background-color:darkgreen;
 
 }
 
-
 .booking-form {
-    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #fff; */
     padding: 20px;
     margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* border-radius: 8px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     text-align: center;
   }
-  
-  .booking-form h2 {
-    margin-bottom: 20px;
-  }
-  
+  .booking-form form {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
   .form-group {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 15px;
   }
   
   .form-group label {
-    display: block;
     margin-bottom: 5px;
   }
   
   .form-group input,
   .form-group select {
-    width: 100%;
+    
+    width: auto;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    cursor: pointer;
+  }
+
+  .booking-form .btn{
+    display: flex;
+    justify-content: center;
+    background-color:rgb(38, 160, 38) ;
+    border:none;
+    border-radius: 5%;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .booking-form .btn:hover{
+    background-color: darkgreen;
   }
 
 .hotel-list {
@@ -139,6 +159,7 @@ body {
   justify-content: center;
   padding: 20px;
   gap: 10px;
+  cursor: pointer;
 }
 
 .hotel-card {
@@ -167,54 +188,6 @@ body {
   color: #3D6CE0;
   margin: 10px 0;
   font-size: 1.2em;
-}
-
-.hotel-info p {
-  margin: 5px 0;
-  display: flex;
-  align-items: center;
-}
-
-.hotel-info i {
-  margin-right: 8px;
-  color: #007BFF;
-}
-
-.price-rating {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.price {
-  color: #06B217;
-  font-weight: bold;
-}
-
-.rating {
-  display: flex;
-  background-color: #3D6CE0;
-  border: 2px solid #3D6CE0;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 4px;
-  font-weight: bold;
-  font-size: 0.9em;
-  margin-left: 10px;
-  cursor: default;
-}
-
-.hotel-icons {
-  display: flex;
-  justify-content: flex-end;
-  padding: 10px 15px;
-  /* border-top: 1px solid #f0f0f0; */
-}
-
-.hotel-icons i {
-  margin-right: 10px;
-  color: gray;
-  font-size: 19px;
 }
 
 .footer{
