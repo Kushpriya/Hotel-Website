@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "../assets/css/nav.css";
 import Homeimg from "../assets/images/home.jpg";
-import Single from "../assets/images/singleroom.jpg";
-import Double from "../assets/images/doubleroom.jpg";
-import Suite from "../assets/images/suiteroom.jpeg";
+import Single from "../assets/images/rooms/singleroom.jpg";
+import Double from "../assets/images/rooms/doubleroom.jpg";
+import Quad from "../assets/images/rooms/quadroom.jpg";
+import Suite from "../assets/images/rooms/suiteroom.jpeg";
 
 function Nav() {
     const [checkIn, setCheckIn] = useState("");
@@ -67,7 +68,7 @@ function Nav() {
                                     <option value="">Select a room type</option>
                                     <option value="single">Deluxe Room</option>
                                     <option value="double">Executive Room</option>
-                                    <option value="suite">Suite</option>
+                                    <option value="suite">Premium Room</option>
                                 </select>
                             </div>
                             <button type="submit" className="btn">BOOK NOW</button>
@@ -85,6 +86,12 @@ function Nav() {
                             <div className="hotel-info">
                                 <img src={Double} alt="Double Room" className="hero-image"/>
                                 <h3>Double Room</h3>                
+                            </div>
+                        </div>
+                        <div className="hotel-card">
+                            <div className="hotel-info">
+                                <img src={Quad} alt="Suite Room" className="hero-image"/>
+                                <h3>Quad Room</h3>
                             </div>
                         </div>
                         <div className="hotel-card">

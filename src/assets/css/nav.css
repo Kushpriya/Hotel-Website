@@ -6,6 +6,7 @@ body {
 }
 
 .App-header {
+   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,7 +57,7 @@ body {
 .hero {
     position: relative;
     text-align: center;
-    /* color: white; */
+    
 }
 
 .hero-image {
@@ -188,6 +189,16 @@ body {
   color: #3D6CE0;
   margin: 10px 0;
   font-size: 1.2em;
+}
+
+.hotel-info .hero-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.hotel-info .hero-image:hover {
+    transform: scale(1.1);
 }
 
 .footer{

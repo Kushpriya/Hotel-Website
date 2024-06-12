@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+.about{
+    background-color: azure;
+    /* height: 10px; */
+}
+
+.hotel-img{
+    padding: 10px; 
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.hero-image {
+    width: 100%;
+    overflow: hidden;
+
+  }
+
+ .hotel-img .hero-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.hotel-img .hero-image:hover {
+    transform: scale(1.1);
+} 
