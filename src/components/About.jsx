@@ -1,6 +1,7 @@
 
 import React from "react";
 import "../assets/css/about.css";
+import Us from "../assets/images/abouts/us.jpg";
 import Home from "../assets/images/abouts/home.jpg";
 import Foods from "../assets/images/abouts/foods.jpeg";
 import Pizza from "../assets/images/abouts/pizza.jpeg";
@@ -12,8 +13,16 @@ function About(){
   return(
     
     <div>
+       <div className="section">
+        <img src={Us} alt="Hotel" className="hero-img"/>
+        <div className="hero-txt">
+         <h2>About Us</h2>
+      </div>
+       </div>
+
       <div className="about">
       <img src={Home} alt="Hotel" className="hero"/>
+      <div>
       <h1>About Us</h1>
       <h2>A Best Place To Enjoy</h2>
       <p>Best budget hotel located in the New York, Ocean Hotels
@@ -25,6 +34,8 @@ function About(){
          comfort and tranquility with added amenities.There are
          wonderful views from our Garden and Terrace.
        </p>
+      </div>
+     
     </div>
 
     <div className="hotel-img">
