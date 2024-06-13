@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import "../assets/css/nav.css";
 import Homeimg from "../assets/images/home.jpg";
-import Single from "../assets/images/rooms/singleroom.jpg";
-import Double from "../assets/images/rooms/doubleroom.jpg";
-import Quad from "../assets/images/rooms/quadroom.jpg";
-import Suite from "../assets/images/rooms/suiteroom.jpeg";
 
 function Nav() {
     const [checkIn, setCheckIn] = useState("");
@@ -73,33 +69,6 @@ function Nav() {
                             </div>
                             <button type="submit" className="btn">BOOK NOW</button>
                         </form>
-                    </div>
-
-                    <div className="hotel-list">
-                        <div className="hotel-card">
-                            <div className="hotel-info">
-                                <img src={Single} alt="Single Room" className="hero-image"/>
-                                <h3>Single Room</h3>
-                            </div>
-                        </div>
-                        <div className="hotel-card">
-                            <div className="hotel-info">
-                                <img src={Double} alt="Double Room" className="hero-image"/>
-                                <h3>Double Room</h3>                
-                            </div>
-                        </div>
-                        <div className="hotel-card">
-                            <div className="hotel-info">
-                                <img src={Quad} alt="Suite Room" className="hero-image"/>
-                                <h3>Quad Room</h3>
-                            </div>
-                        </div>
-                        <div className="hotel-card">
-                            <div className="hotel-info">
-                                <img src={Suite} alt="Suite Room" className="hero-image"/>
-                                <h3>Suite Room</h3>
-                            </div>
-                        </div>
                     </div>
                 </main>
             </div>

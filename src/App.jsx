@@ -3,18 +3,18 @@ import Nav from "./components/Nav";
 import About from "./components/About";
 import Rooms from "./components/Rooms";
 import Amenities from "./components/Amenities";
-import Attractions from "./components/Attrractions";
+import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
 
 
 class App extends React.Component{
   render(){
     return ( <div>
-    <Nav/>
-    <About/>
-    <Rooms/>
+    {/* <Nav/> */}
+    {/* <About/> */}
+    {/* <Rooms/> */}
     <Amenities/>
-    <Attractions/>
+    <Gallery/>
     <Contact/>
     </div>
   )
