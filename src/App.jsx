@@ -13,7 +13,7 @@ class App extends React.Component{
     {/* <Nav/> */}
     {/* <About/> */}
     {/* <Rooms/> */}
-    <Amenities/>
+    {/* <Amenities/> */}
     <Gallery/>
     <Contact/>
     </div>
