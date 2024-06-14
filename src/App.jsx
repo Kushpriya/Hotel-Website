@@ -10,10 +10,10 @@ import Contact from "./components/Contact";
 class App extends React.Component{
   render(){
     return ( <div>
-    {/* <Nav/> */}
-    {/* <About/> */}
-    {/* <Rooms/> */}
-    {/* <Amenities/> */}
+    <Nav/>
+    <About/>
+    <Rooms/>
+    <Amenities/>
     <Gallery/>
     <Contact/>
     </div>
