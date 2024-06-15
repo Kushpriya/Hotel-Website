@@ -88,7 +88,7 @@ const Contact = () => {
               </div>
               <div className="footer-info-item">
                 <img src={Location} alt="Location" className="footer-img-icon" />
-                <p>D-113, International Trade Center, Majura Gate, Surat, Gujarat, India</p>
+                <p>123 Fifth Avenue, New York, NY 10001, USA</p>
               </div>
             </div>
           </div>
