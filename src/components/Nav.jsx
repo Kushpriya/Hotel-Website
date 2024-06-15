@@ -72,11 +72,6 @@ function Nav() {
                     </div>
                 </main>
             </div>
-            <footer className="footer">
-                <div className="footer-text">
-                    <p>Copyright &copy; 2024 by Priya Kushawaha | All Rights Reserved</p>
-                </div>
-            </footer>
         </div>
     );
 }

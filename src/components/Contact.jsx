@@ -44,7 +44,7 @@ const Contact = () => {
             </div>
             <div className="info-text">
               <h4>Location</h4>
-              <p>D-113, International Trade Center, Majura Gate, Surat, Gujarat 395002</p>
+              <p>123 Fifth Avenue, New York, NY 10001, USA</p>
             </div>
           </div>
         </div>
