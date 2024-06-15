@@ -26,7 +26,7 @@ const amenities = [
 const Amenities = () => {
   return (
     <div>
-      <div className="banner">
+      <div className="banners">
         <img src={Banner} alt="Hotel" className="img"/>
         <div className="text">
           <h1>Amenities</h1>

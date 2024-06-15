@@ -45,7 +45,7 @@ const gallery = [
 const Gallery = () => {
   return(
 <div>
-      <div className="banner">
+      <div className="head">
         <img src={Banner} alt="Hotel" className="img"/>
         <div className="text">
           <h1>Gallery</h1>
