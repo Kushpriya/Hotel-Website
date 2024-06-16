@@ -1,6 +1,55 @@
 
 import React, { useState } from 'react';
+import "../assets/css/about.css";
+import "../assets/css/room.css";
+import "../assets/css/amenities.css";
+import "../assets/css/gallery.css";
+import "../assets/css/home.css";
+
 import Homeimg from '../assets/images/home.jpg';
+import Aboutus from "../assets/images/abouts/home.jpg";
+import Single from "../assets/images/rooms/singleroom.jpg";
+import Double from "../assets/images/rooms/doubleroom.jpg";
+import Quad from "../assets/images/rooms/quadroom.jpg";
+
+import WifiIcon from "../assets/icons/wifi.png";
+import BedIcon from "../assets/icons/bed.png";
+import BathIcon from "../assets/icons/bath.png";
+import ServiceIcon from "../assets/icons/service.png";
+import BarIcon from "../assets/icons/bar.png";
+import CoffeeIcon from "../assets/icons/coffee.png";
+
+import Image1 from "../assets/images/home/image1.png";
+import Image2 from "../assets/images/home/image2.png";
+import Image3 from "../assets/images/home/image3.png";
+import Image4 from "../assets/images/home/image4.png";
+import Image5 from "../assets/images/home/image5.png";
+import Image6 from "../assets/images/home/image6.png";
+
+
+const rooms = [
+    { image: Single, name: 'Single Room' },
+    { image: Double, name: 'Double Room' },
+    { image: Quad, name: 'Quad Room' }
+  ];
+
+  const amenities = [
+    { icon: WifiIcon, name: 'Free Wi-Fi' },
+    { icon: BedIcon, name: 'King Sized Beds' },
+    { icon: BathIcon, name: 'Bathtub' },
+    { icon: ServiceIcon, name: 'Room Service' },
+    { icon: BarIcon, name: 'Minibar' },
+    { icon: CoffeeIcon, name: 'Coffee Machine' }
+  ];
+  
+  const images = [
+    {image:Image1, alt: "img1"},
+    {image:Image2, alt: "img2 "},
+    {image:Image3, alt: "img3"},
+    {image:Image4, alt: "img4"},
+    {image:Image5, alt: "img5"},
+    {image:Image6, alt: "img6"}
+  ];
 
 const Home = () => {
   const [checkIn, setCheckIn] = useState('');
@@ -57,6 +106,62 @@ const Home = () => {
           <button type="submit" className="btn">BOOK NOW</button>
         </form>
       </div>
+
+      <div className="about">
+        <img src={Aboutus} alt="Hotel" className="hero" />
+        <div>
+          <h1>About Us</h1>
+          <h2>A Best Place To Enjoy</h2>
+          <p>
+            Best budget hotel located in New York, Ocean Hotels offers a clean and quiet place to begin and end your day at a value price.
+          </p>
+          <p>
+            Each of our unique hotel rooms provides a sense of comfort and tranquility with added amenities. There are wonderful views from our Garden and Terrace.
+          </p>
+        </div>
+      </div>
+
+
+<div>
+<h1 className='txt'>Our Rooms</h1>
+<h2 className='head-txt'>Discover Our Rooms</h2>
+<div className="hotel-lis">
+        {rooms.map((room, index) => (
+          <div key={index} className="hotel-card">
+            <div className="hotel-info">
+              <img src={room.image} alt={room.name} className="hero-image" />
+              <h3>{room.name}</h3>
+            </div>
+          </div>
+        ))}
+      </div>
+</div>
+
+
+<div>
+    <h1 className='txt'>Our Services</h1>
+    <h2 className='head-txt'>What We Offer You</h2>
+<div className="amenitie">
+        {amenities.map((amenity, index) => (
+          <div key={index} className="amenity">
+            <img src={amenity.icon} alt={amenity.name} className="amenity-icon" />
+            <p className="amenity-name">{amenity.name}</p>
+          </div>
+        ))}
+      </div>
+
+</div>
+     
+
+<div className='phot'>
+    <h1 className='txts'>Gallery</h1>
+    <div className="galler">
+        {images.map((images,index) =>(
+            <img  key = {index} src = {images.image} alt={images.alt} className="home-img" />
+        ))}
+      </div>
+</div>
+      
     </div>
   );
 };
