@@ -57,55 +57,6 @@ const Contact = () => {
           <button type="submit">Send</button>
         </form>
       </div>
-
-      <footer className="footer-container">
-        <div className="footer-sections">
-          <div className="footer-section">
-            <h4>Menu</h4>
-            <div className="footer-menu-columns">
-              <div>
-                <p>Home</p>
-                <p>About Us</p>
-                <p>Rooms</p>
-              </div>
-              <div>
-                <p>Amenities</p>
-                <p>Gallery</p>
-                <p>Contact Us</p>
-              </div>
-            </div>
-          </div>
-          <div className="footer-section">
-            <h4>Contact</h4>
-            <div className="contact-footer-info">
-              <div className="footer-info-item">
-                <img src={Call} alt="Phone" className="footer-img-icon" />
-                <a href="tel:+9118002224545">+91 18002224545</a>
-              </div>
-              <div className="footer-info-item">
-                <img src={Email} alt="Email" className="footer-img-icon" />
-                <a href="mailto:info@oceanhotel.com">info@oceanhotel.com</a>
-              </div>
-              <div className="footer-info-item">
-                <img src={Location} alt="Location" className="footer-img-icon" />
-                <p>123 Fifth Avenue, New York, NY 10001, USA</p>
-              </div>
-            </div>
-          </div>
-          <div className="footer-section">
-            <h4>Social Media</h4>
-            <div className="social-icons">
-              <a href="#"><img src={FacebookIcon} alt="Facebook" /></a>
-              <a href="#"><img src={TwitterIcon} alt="Twitter" /></a>
-              <a href="#"><img src={InstagramIcon} alt="Instagram" /></a>
-            </div>
-          </div>
-        </div>
-        <div className="footer-bottom">
-          <p>Ocean Hotel © 2024. All Rights Reserved.</p>
-          <p>Website developed by Priya Kushawaha</p>
-        </div>
-      </footer>
     </div>
   );
 };

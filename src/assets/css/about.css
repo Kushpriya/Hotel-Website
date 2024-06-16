@@ -34,6 +34,7 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 margin-top: 80px;
 }
+
 .about .hero{
     width: 40%;
     height: 400px;
@@ -63,8 +64,8 @@ margin-top: 80px;
     padding: 10px; 
     cursor: pointer;
     display: grid;
-margin-top: 80px;
-
+    margin-top: 80px ;
+    margin-bottom: 80px;
     grid-template-columns: repeat(3, 1fr);
 }
 
