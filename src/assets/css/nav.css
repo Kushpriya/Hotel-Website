@@ -23,19 +23,32 @@ body {
   margin: 0;
 }
 
-.App-header nav ul {
-  list-style: none;
-  display: flex;
+ nav ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
-.App-header nav ul li {
-  font-weight: bold;
-  margin: 0 15px;
-  color: #000;
-  cursor: pointer;
+nav ul li {
+  float: left;
 }
+
+nav ul li a {
+  display: block;
+  padding: 20px 20px;
+  font-size: 16px;
+  font-weight:900;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover
+ {
+  color:rgb(20, 150, 20);
+}
+
 
  #book{
     background-color:rgb(38, 160, 38) ;
@@ -46,8 +59,9 @@ body {
     font-weight: bold;
     display: flex;
     margin: 0 40px;
-    height: 40px;
+    height: 45px;
     width: 120px;
+    margin-top: 10px;
     align-items: center;
     justify-content: center;
      cursor: pointer;
@@ -57,10 +71,6 @@ body {
 .App-header #book:hover{
     background-color:darkgreen;
 
-}
-
-.App-header nav ul li:hover {
-  color: rgb(38, 160, 38);
 }
 
 .hero {
