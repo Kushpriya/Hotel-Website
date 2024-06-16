@@ -6,12 +6,17 @@ body {
 }
 
 .App-header {
-   position: relative;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
-  background-color: #F4F4F4;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
 }
 
 .App-header h1 {
@@ -36,12 +41,16 @@ body {
     background-color:rgb(38, 160, 38) ;
     border:none;
     border-radius: 5%;
-    color: white;
+    color: white; 
+    font-size: 15px;
     font-weight: bold;
     display: flex;
-    margin: 0 15px;
-    padding: 10px;
-  cursor: pointer;
+    margin: 0 40px;
+    height: 40px;
+    width: 120px;
+    align-items: center;
+    justify-content: center;
+     cursor: pointer;
 
 }
 

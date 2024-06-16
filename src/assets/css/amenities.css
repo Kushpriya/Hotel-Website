@@ -3,13 +3,12 @@
 .banners {
   position: relative;
   text-align: center;
-  margin-top: 100px;
  
 }
 
-.img {
+.banners .img {
     width: 100%;
-    height: 350px;
+    height: 400px;
 
 }
 
