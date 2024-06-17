@@ -8,11 +8,13 @@ import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 class App extends React.Component {
   render() {
     return (
       <Router>
+        <ScrollToTop/>
         <div>
           <Nav />
           <Routes>
