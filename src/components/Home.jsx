@@ -68,11 +68,11 @@ const Home = () => {
   const sliderSettings = {
     dots: true,
     infinite: true,
-    speed: 1500,
+    speed: 5000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000
+    autoplaySpeed: 100
   };
 
   return (

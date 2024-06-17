@@ -4,9 +4,6 @@ import Banner from "../assets/images/contact/banner.jpg";
 import Call from "../assets/images/contact/call.png";
 import Email from "../assets/images/contact/email.png";
 import Location from "../assets/images/contact/location.png";
-import FacebookIcon from "../assets/images/contact/facebook.png";
-import TwitterIcon from "../assets/images/contact/twitter.png";
-import InstagramIcon from "../assets/images/contact/insta.png";
 
 const Contact = () => {
   return (
@@ -14,7 +11,7 @@ const Contact = () => {
       <div className="banner">
         <img src={Banner} alt="Hotel" className="img" />
         <div className="text">
-          <h1>Contact</h1>
+          <h1>Contact Us</h1>
         </div>
       </div>
 
